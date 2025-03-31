@@ -15,7 +15,7 @@ const frutas = ['maçã', 'banana', 'uva'];
 frutas.forEach(function(fruta) {
   console.log('Colocando no carrinho: ' + fruta);
 
-
+});
  
  /* Vai mostrar:
 
@@ -28,3 +28,8 @@ frutas.forEach(function(fruta) {
 // Versão mais simples
 
 frutas.forEach(fruta => console.log('Comprei: ' + fruta));
+
+
+frutas.forEach((fruta, index) => {
+    console.log(`Posição ${index} Nome da fruta: ${fruta}`);
+});
